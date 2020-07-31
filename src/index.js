@@ -6,4 +6,7 @@ store.subscribe(() => {
 });
 
 store.dispatch(actions.bugAdded("Bug 10"));
+store.dispatch(actions.bugAdded("Bug 20"));
+store.dispatch(actions.bugAdded("Bug 30"));
+store.dispatch(actions.bugAdded("Bug 40"));
 console.log(store.getState());
