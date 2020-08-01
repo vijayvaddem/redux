@@ -5,8 +5,8 @@ store.subscribe(() => {
   console.log("Store changed");
 });
 
-store.dispatch(actions.bugAdded("Bug 10"));
-store.dispatch(actions.bugAdded("Bug 20"));
-store.dispatch(actions.bugAdded("Bug 30"));
-store.dispatch(actions.bugAdded("Bug 40"));
+store.dispatch(actions.bugAdded("Bug 1"));
+store.dispatch(actions.bugAdded("Bug 2"));
+store.dispatch(actions.bugAdded("Bug 3"));
+store.dispatch(actions.bugResolved(3));
 console.log(store.getState());
