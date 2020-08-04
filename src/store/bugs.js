@@ -1,4 +1,13 @@
-import { createAction, createReducer } from "@reduxjs/toolkit";
+import { createAction, createReducer, createSlice } from "@reduxjs/toolkit";
+
+createSlice({
+  name: "bugs",
+  initialState: [],
+  reducers: {
+    bugAdded(state, action),
+    bugResolved,
+  },
+});
 
 //Action creators
 export const bugAdded = createAction("bugAdded");
