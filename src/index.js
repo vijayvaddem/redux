@@ -9,6 +9,7 @@ store.subscribe(() => {
 });
 
 store.dispatch(projectAdded({ name: "Project A" }));
+store.dispatch(actions.bugAdded({ description: "Bug 1" }));
 store.dispatch(actions.bugAdded({ description: "Bug 2" }));
 store.dispatch(actions.bugAdded({ description: "Bug 3" }));
 store.dispatch(actions.bugResolved({ id: 3 }));
