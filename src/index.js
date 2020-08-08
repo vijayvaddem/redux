@@ -16,15 +16,14 @@ store.subscribe(() => {
 });
 
 store.dispatch(userAdded({ name: "Vijay" }));
-store.dispatch(userAdded({ name: "Kumar" }));
-store.dispatch(projectAdded({ name: "Project A" }));
+// store.dispatch(userAdded({ name: "Kumar" }));
+// store.dispatch(projectAdded({ name: "Project A" }));
+// store.dispatch(bugAdded({ description: "Bug 1" }));
+// store.dispatch(bugAdded({ description: "Bug 2" }));
+// store.dispatch(bugAdded({ description: "Bug 3" }));
+// store.dispatch(bugAssignedToUser({ bugId: 1, userId: 1 }));
+// store.dispatch(bugResolved({ id: 3 }));
 
-store.dispatch(bugAdded({ description: "Bug 1" }));
-store.dispatch(bugAdded({ description: "Bug 2" }));
-store.dispatch(bugAdded({ description: "Bug 3" }));
-store.dispatch(bugAssignedToUser({ bugId: 1, userId: 1 }));
-
-store.dispatch(bugResolved({ id: 3 }));
 console.log(store.getState());
 
 const x = getUnresolvedBugs(store.getState());
